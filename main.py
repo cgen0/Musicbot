@@ -5,12 +5,18 @@ import os, Metadata
 import logging
 logging.basicConfig(level=logging.ERROR)
 
+
+#--------------enter your own values--------------
+
 api_id= 123456
 api_hash='exampleapihash'
 phone='phonenumber'
 target_chat_id= -10012345678
 myID=12345678
-client=TelegramClient("human", api_id, api_hash)
+
+#-------------------------------------------------
+
+client=TelegramClient("client", api_id, api_hash)
 
 def walklevel(some_dir, level=1):
     some_dir = some_dir.rstrip(os.path.sep)
